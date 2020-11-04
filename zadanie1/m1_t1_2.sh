@@ -1,0 +1,1 @@
+cat newtest.txt | tr "абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ" "abvgdeejziiklmnoprstufxc4ww'y'euqABVGDEEJZIIKLMNOPRSTUFXC4WW'Y'EUQ"

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Enter the file path and name to backup:"
+read srcfls
+echo "Enter the file path where to save your backup:"
+read todir
+
+echo "Enter frequency:"
+read frq
+
+
+sudo crontab -l > foocron
+#sudo echo -e "${frq} * * * * tar -cf ${todir}backup-$(date +%F--%H-%M).tar ${srcfls}\n" >> foocron
+sudo echo -e "*/${frq} * * * * /home/redann22/mkback "${srcfls}" "${todir}"\n" >> foocron
+sudo crontab foocron
+sudo rm foocron
+
+
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+#sudo tar -cf /home/redann22/backup-$(date +%F--%H-%M).tar /home/redann22/backupfile.txt
+sudo tar -cf ${2}/backup-$(date +%F--%H-%M).tar ${1}
+
+
+
+
